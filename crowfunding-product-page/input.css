@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+
+:root {
+  /* ### Primary */
+
+  --moderate-cyan: hsl(176, 50%, 47%);
+  --dark-cyan: hsl(176, 72%, 28%);
+
+  /* ### Neutral */
+
+  --dark-gray: hsl(0, 0%, 48%);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.show-links {
+  @apply h-[218px];
+}
+
+.show-menu {
+  height: 100vh;
+  opacity: 1;
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.bookmarked circle {
+  @apply fill-darkCyan;
+}
+.bookmarked path {
+  @apply fill-white;
+}
+
+.border-active {
+  border-color: var(--moderate-cyan);
+}
+
+.checkbox-active {
+  opacity: 1 !important;
+}
+
+.checkbox-inActive {
+  opacity: 0;
+}
+
+.show-pledge-input {
+  height: 100%;
+  opacity: 100;
+}
+
+.hidden-pledge-input {
+  height: 0;
+  opacity: 0;
+}

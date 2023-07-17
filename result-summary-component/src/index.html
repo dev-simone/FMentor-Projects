@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result Summary Component</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="font-hankenGrotesk lg:bg-PaleBlue">
+    <!-- RESULT -->
+
+    <div
+      class="lg:flex lg:w-1/2 lg:mx-auto lg:mt-20 lg:bg-white lg:rounded-3xl lg:shadow-2xl"
+    >
+      <div
+        class="p-7 text-center w-full bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue rounded-b-3xl lg:w-96 lg:space-y-9 lg:rounded-t-3xl"
+      >
+        <h1 class="text-PaleBlue text-lg mb-6">Your Result</h1>
+        <div
+          class="flex flex-col justify-center bg-gradient-to-b from-VioletBlue to-PersianBlue w-36 h-36 mx-auto rounded-full"
+        >
+          <h1 class="text-6xl text-white font-extrabold">76</h1>
+          <span class="mt-2 text-LightLavender">of 100</span>
+        </div>
+
+        <div class="mt-6">
+          <h1 class="text-2xl text-white font-bold mb-3">Great</h1>
+          <p class="text-PaleBlue mx-auto">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+
+      <!-- SUMMARY -->
+
+      <div class="p-7 lg:w-1/2 lg:mx-auto">
+        <h1 class="text-DarkGrayBlue font-bold text-lg mb-5">Summary</h1>
+        <div class="space-y-4">
+          <!-- REACTION -->
+
+          <div
+            class="flex justify-between w-auto bg-lightRed bg-opacity-10 p-3 rounded-lg"
+          >
+            <div class="flex">
+              <img class="" src="images/icon-reaction.svg" alt="" />
+              <p class="text-lightRed ml-2">Reaction</p>
+            </div>
+            <p class="float-right font-bold text-DarkGrayBlue">
+              80
+              <span class="text-slate-500 opacity-50">/ 100</span>
+            </p>
+          </div>
+
+          <!-- MEMORY -->
+
+          <div
+            class="flex justify-between w-auto bg-OrangeYellow bg-opacity-10 p-3 rounded-lg"
+          >
+            <div class="flex">
+              <img class="" src="images/icon-memory.svg" alt="" />
+              <p class="text-OrangeYellow ml-2">Memory</p>
+            </div>
+            <p class="float-right font-bold text-DarkGrayBlue">
+              92
+              <span class="text-slate-500 opacity-50">/ 100</span>
+            </p>
+          </div>
+
+          <!-- VERBAL -->
+
+          <div
+            class="flex justify-between w-auto bg-GreenTeal bg-opacity-10 p-3 rounded-lg"
+          >
+            <div class="flex">
+              <img class="" src="images/icon-verbal.svg" alt="" />
+              <p class="text-GreenTeal ml-2">Verbal</p>
+            </div>
+            <p class="float-right font-bold text-DarkGrayBlue">
+              61
+              <span class="text-slate-500 opacity-50">/ 100</span>
+            </p>
+          </div>
+
+          <!-- VISUAL -->
+
+          <div
+            class="flex justify-between w-auto bg-CobaltBlue bg-opacity-10 p-3 rounded-lg"
+          >
+            <div class="flex">
+              <img class="" src="images/icon-visual.svg" alt="" />
+              <p class="text-CobaltBlue ml-2">Visual</p>
+            </div>
+            <p class="float-right font-bold text-DarkGrayBlue">
+              72
+              <span class="text-slate-500 opacity-50">/ 100</span>
+            </p>
+          </div>
+        </div>
+        <!-- BUTTON -->
+
+        <button
+          class="w-full p-3 bg-DarkGrayBlue text-white font-bold rounded-3xl mt-5 hover:bg-gradient-to-b from-VioletBlue to-CobaltBlue"
+        >
+          Continue
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

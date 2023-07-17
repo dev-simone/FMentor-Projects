@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro Section</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+  </head>
+
+  <!--  
+    almostWhite: "hsl(0, 0%, 98%)",
+    mediumGray: "hsl(0, 0%, 41%)",
+    almostBlack: "hsl(0, 0%, 8%)", 
+  -->
+
+  <body class="font-epilogue text-lg bg-almostWhite">
+    <!-- Navbar -->
+    <nav class="m-5 lg:m-10 lg:flex lg:space-x-10">
+      <!-- Nav Header -->
+      <div class="flex justify-between">
+        <img class="object-contain" src="images/logo.svg" alt="" />
+        <button class="z-10 lg:hidden" id="nav-toggle">
+          <img id="open-menu" src="images/icon-menu.svg" alt="" />
+          <img
+            id="close-menu"
+            class="display-none"
+            src="images/icon-close-menu.svg"
+            alt=""
+          />
+        </button>
+      </div>
+      <!-- Links -->
+      <ul
+        class="absolute top-0 right-0 z-0 w-0 overflow-hidden translate-x-full transition-all ease-in-out duration-500 lg:w-full lg:h-auto lg:transition-none lg:translate-x-0 lg:static lg:overflow-visible"
+        id="links"
+      >
+        <div class="flex h-full w-full text-mediumGray">
+          <div class="w-1/2 h-full bg-almostBlack opacity-75 lg:hidden"></div>
+          <div
+            class="w-2/3 h-full bg-almostWhite lg:w-full lg:flex lg:items-center lg:justify-between"
+          >
+            <div class="lg:flex lg:space-y-0 space-y-5 mt-24 lg:m-0">
+              <!-- Features -->
+              <li class="mx-5 lg:relative">
+                <button
+                  class="dropdown-btn flex items-center hover:text-almostBlack"
+                >
+                  Features
+                  <img
+                    class="arrow-down w-[10px] h-[6px] ml-3"
+                    src="images/icon-arrow-down.svg"
+                    alt=""
+                  />
+
+                  <img
+                    class="arrow-up w-[10px] h-[6px] ml-3 display-none"
+                    src="images/icon-arrow-up.svg"
+                    alt=""
+                  />
+                </button>
+                <!-- Features Dropdown Menu -->
+                <div
+                  class="dropdown-panel flex flex-col h-0 w-full items-center overflow-hidden transition-all duration-500 lg:absolute lg:top-10 lg:right-0 lg:items-start lg:bg-white lg:rounded-xl lg:w-[180px] lg:shadow-xl"
+                >
+                  <div class="my-5 w-2/3 space-y-3 lg:w-auto lg:text-sm lg:p-5">
+                    <!-- Todo List -->
+                    <div class="flex space-x-3">
+                      <img
+                        class="object-contain w-[20px]"
+                        src="images/icon-todo.svg"
+                        alt=""
+                      />
+                      <a class="mt-1 hover:text-almostBlack" href="#"
+                        >Todo List</a
+                      >
+                    </div>
+                    <!-- Calendar -->
+                    <div class="flex space-x-3">
+                      <img
+                        class="object-contain w-[20px]"
+                        src="images/icon-calendar.svg"
+                        alt=""
+                      />
+                      <a class="mt-1 hover:text-almostBlack" href="#"
+                        >Calendar</a
+                      >
+                    </div>
+                    <!-- Reminders -->
+                    <div class="flex space-x-3">
+                      <img
+                        class="object-contain w-[20px]"
+                        src="images/icon-reminders.svg"
+                        alt=""
+                      />
+                      <a class="mt-1 hover:text-almostBlack" href="#"
+                        >Reminders</a
+                      >
+                    </div>
+                    <!-- Planning -->
+                    <div class="flex space-x-3">
+                      <img
+                        class="object-contain w-[20px]"
+                        src="images/icon-planning.svg"
+                        alt=""
+                      />
+                      <a class="mt-1 hover:text-almostBlack" href="#"
+                        >Planning</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- Company -->
+              <li class="mx-5 lg:relative">
+                <button
+                  class="dropdown-btn flex items-center hover:text-almostBlack"
+                >
+                  Company
+                  <img
+                    class="arrow-down w-[10px] h-[6px] ml-3"
+                    src="images/icon-arrow-down.svg"
+                    alt=""
+                  />
+                  <img
+                    class="arrow-up w-[10px] h-[6px] ml-3 display-none"
+                    src="images/icon-arrow-up.svg"
+                    alt=""
+                  />
+                </button>
+                <!-- Company Dropdown Menu -->
+                <div
+                  class="dropdown-panel flex flex-col w-full items-center h-0 overflow-hidden transition-all duration-500 lg:absolute lg:top-10 lg:-right-6 lg:items-start lg:bg-white lg:rounded-xl lg:w-[150px] lg:shadow-xl"
+                >
+                  <div
+                    class="mt-5 w-2/3 space-y-3 lg:p-5 lg:text-sm lg:w-auto lg:mt-0"
+                  >
+                    <!-- History -->
+                    <div class="flex space-x-3">
+                      <a class="hover:text-almostBlack" href="#">History</a>
+                    </div>
+                    <!-- Our Team -->
+                    <div class="flex space-x-3">
+                      <a class="hover:text-almostBlack" href="#">Our Team</a>
+                    </div>
+                    <!-- Blog -->
+                    <div class="flex space-x-3">
+                      <a class="hover:text-almostBlack" href="#">Blog</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="mx-5">
+                <a class="hover:text-almostBlack" href="#">Careers</a>
+              </li>
+              <li class="mx-5">
+                <a class="hover:text-almostBlack" href="#">About</a>
+              </li>
+            </div>
+
+            <!-- Buttons Login/Register -->
+            <div
+              class="flex flex-col space-y-5 mt-10 justify-center items-center lg:flex-row lg:mt-0 lg:space-y-0 lg:space-x-5"
+            >
+              <button class="w-3/4 hover:text-almostBlack">Login</button>
+              <button
+                class="border-2 border-mediumGray w-3/4 p-2 rounded-xl hover:text-almostBlack hover:border-almostBlack"
+              >
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div
+      class="mt-12 lg:flex lg:container lg:my-20 mx-auto lg:justify-center lg:items-center"
+    >
+      <!-- Mobile Hero Image -->
+      <img class="mt-10 lg:hidden" src="images/image-hero-mobile.png" alt="" />
+      <!-- Title -->
+      <div
+        class="m-5 text-center lg:m-0 lg:text-start lg:w-1/2 lg:items-center lg:ml-20"
+      >
+        <h1
+          class="text-4xl font-bold text-almostBlack mt-12 lg:text-8xl lg:w-full"
+        >
+          Make <br class="hidden lg:block" />
+          remote work
+        </h1>
+        <p class="text-mediumGray mt-8 lg:w-9/12">
+          Get your team in sync, no matter your location. Streamline processes,
+          create, team rituals, and watch productivity soar.
+        </p>
+        <button
+          class="bg-almostBlack text-almostWhite py-3 px-6 rounded-2xl font-bold shadow-xl border hover:bg-almostWhite hover:border-almostBlack hover:text-almostBlack mt-8"
+        >
+          Learn More
+        </button>
+
+        <!-- Clients -->
+        <div class="flex justify-around mt-16 lg:w-9/12">
+          <img class="object-contain" src="images/client-databiz.svg" alt="" />
+          <img
+            class="object-contain"
+            src="images/client-audiophile.svg"
+            alt=""
+          />
+          <img class="object-contain" src="images/client-meet.svg" alt="" />
+          <img class="object-contain" src="images/client-maker.svg" alt="" />
+        </div>
+      </div>
+      <!-- Desktop Hero Image -->
+      <img
+        class="h-2/6 w-2/6 hidden lg:block lg:mr-20"
+        src="images/image-hero-desktop.png"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
