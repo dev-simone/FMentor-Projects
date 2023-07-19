@@ -10,3 +10,9 @@ ACTIONS for the reducer function:
 3. RESET,
 4. DEL_DIGIT,
 5. EVALUATE
+
+# COMPONENTS
+
+1.  ButtonDigit
+2.  ButtonOperation
+3.  Navbar
