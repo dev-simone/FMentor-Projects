@@ -1,12 +1,14 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const NewTodoForm = ({ addTodo }) => {
   const [newItem, setNewItem] = useState("");
+  const inputRef = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (newItem === "") return;
     addTodo(newItem);
+    inputRef.current.blur();
     setNewItem("");
   };
 
@@ -19,6 +21,7 @@ const NewTodoForm = ({ addTodo }) => {
           className="form__input-container__input"
           value={newItem}
           id="item"
+          ref={inputRef}
           placeholder="Create a new todo..."
           autoComplete="off"
           onChange={(e) => setNewItem(e.target.value)}
