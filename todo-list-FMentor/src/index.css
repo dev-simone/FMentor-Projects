@@ -222,6 +222,13 @@ body {
   cursor: pointer;
 }
 
+.todo-list__drag-text {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+  text-align: center;
+}
+
 /* ### MEDIA QUERY*/
 
 @media screen and (min-width: 990px) {
@@ -310,6 +317,10 @@ body {
   .todo-list__state-items-container button:focus {
     color: var(--bright-blue);
   }
+
+  .todo-list__drag-text {
+    color: var(--very-dark-grayish-blue);
+  }
 }
 
 /*### THEME LIGHT STYLES */
@@ -375,5 +386,9 @@ body {
 
   .todo-list__state-items-container button:focus {
     color: var(--bright-blue);
+  }
+
+  .todo-list__drag-text {
+    color: var(--dark-grayish-blue-light);
   }
 }

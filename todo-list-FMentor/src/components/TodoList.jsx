@@ -154,6 +154,7 @@ const TodoList = ({
         <button onClick={() => setState("active")}>Active</button>
         <button onClick={() => setState("completed")}>Completed</button>
       </div>
+      <p className="todo-list__drag-text">Drag and drop to reorder list</p>
     </>
   );
 };
