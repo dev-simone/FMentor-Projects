@@ -406,3 +406,15 @@ body {
     background: hsl(176, 100%, 63%) !important;
   }
 }
+
+/* ### MEDIA QUERY*/
+@media (max-width: 440px) {
+  .calculator__grid {
+    grid-template-columns: repeat(4, 3rem);
+    grid-template-rows: minmax(3rem, 3rem) repeat(4, 3rem);
+  }
+
+  .calculator__grid button {
+    font-size: 24px;
+  }
+}
