@@ -18,10 +18,6 @@ They do not adapt to mobile displays.
 
 - Faq-accordion-card: https://resilient-bublanina-ffbbf1.netlify.app/
 - Intro-component-signup: https://marvelous-shortbread-ee6395.netlify.app/
-- Interactive-rating-component:
-- Four-card-feature
-- NFT-card-component:
-- Product-preview-component:
-- Stats-preview-component:
-- Single-price-component:
-- Coming-soon-component:
+- Interactive-rating-component: https://tubular-moxie-fce7d2.netlify.app/
+- Product-preview-component: https://visionary-banoffee-1c43ed.netlify.app/
+- Social-proof-section: https://willowy-crepe-f3922e.netlify.app/
