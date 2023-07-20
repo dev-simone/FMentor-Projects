@@ -16,9 +16,8 @@ Translation into HTML, CSS and Javascript of various designs taken from the Fron
 realised with pure html, css and javascript.
 They do not adapt to mobile displays.
 
-- Faq-accordion-card:
-- Intro-component-signup:
-- Huddle-landing-page:
+- Faq-accordion-card: https://resilient-bublanina-ffbbf1.netlify.app/
+- Intro-component-signup: https://marvelous-shortbread-ee6395.netlify.app/
 - Interactive-rating-component:
 - Four-card-feature
 - NFT-card-component:

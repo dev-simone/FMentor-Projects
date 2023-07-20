@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  overflow: hidden;
+}
+
+.bg-top {
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 200px;
+}
+
+.bg-bottom {
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: 0;
+}
+
+.container-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 50px auto;
+  width: 100%;
+}
+
+.description {
+  width: 430px;
+  margin-right: 300px;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--very-dark-magenta);
+  line-height: 55px;
+}
+
+.description p {
+  color: var(--dark-grayish-magenta);
+  line-height: 26px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.rated {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 150px;
+  margin-top: 50px;
+}
+
+.rated p {
+  padding-left: 30px;
+}
+
+.rated-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-grayish-magenta);
+  margin: 10px 20px;
+  padding: 5px;
+  border-radius: 15px;
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+}
+
+.star-icon {
+  padding-left: 10px;
+  width: 17px;
+  height: 16px;
+}
+
+.position-1 {
+  position: relative;
+  left: 50px;
+}
+
+.position-2 {
+  position: relative;
+  left: 100px;
+}
+
+.container-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px auto;
+  width: 100%;
+}
+.card {
+  width: 350px;
+  height: 250px;
+  background-color: var(--very-dark-magenta);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.buyer {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.buyer img {
+  border-radius: 100px;
+  height: 60px;
+  width: 60px;
+}
+
+.buyer-info {
+  margin-left: 20px;
+}
+
+.buyer-info p {
+  color: var(--soft-pink);
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.buyer-info h4 {
+  margin-bottom: 5px;
+}
+
+.review {
+  line-height: 25px;
+}
+
+.position-card-1 {
+  position: relative;
+  top: 30px;
+}
+
+.position-card-2 {
+  position: relative;
+  top: 60px;
+}
