@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+}
+
+.card {
+  background-color: var(--dark-blue);
+  color: white;
+  width: 425px;
+  height: 418px;
+  padding: 30px;
+  margin: 100px auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.star-img {
+  width: 47px;
+  height: 47px;
+  background-color: hsl(216, 12%, 54%, 0.2);
+  padding: 15px;
+  border-radius: 100%;
+  margin-bottom: 30px;
+}
+
+.description {
+  color: var(--light-grey);
+  line-height: 25px;
+  margin: 10px 0 25px 0;
+}
+
+.btn-rate-container {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-rate {
+  width: 47px;
+  height: 47px;
+  border-radius: 100%;
+  border: none;
+  background-color: hsl(216, 12%, 54%, 0.2);
+  color: var(--light-grey);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-rate:hover {
+  background-color: var(--orange);
+  color: white;
+}
+
+.btn-rate:focus {
+  background-color: var(--light-grey);
+  color: white;
+}
+
+.btn-submit {
+  font: inherit;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--orange);
+  padding: 12px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: white;
+  color: var(--orange);
+}
+
+.center-items {
+  align-items: center;
+  text-align: center;
+}
+
+.illustration-img {
+  margin-bottom: 40px;
+}
+
+.text-rating {
+  margin-bottom: 40px;
+  padding: 6px 20px;
+  background-color: hsl(216, 12%, 54%, 0.2);
+  color: var(--orange);
+  border-radius: 100px;
+}
+
+.thanks-p {
+  margin-top: 10px;
+  line-height: 25px;
+  color: var(--light-grey);
+}
+
+.hidden {
+  display: none;
+}

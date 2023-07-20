@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(images/bg-intro-desktop.png);
+  background-color: var(--red);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > * {
+  margin: 20px;
+}
+
+.header-text {
+  width: 550px;
+}
+
+.title {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.container {
+  width: 30%;
+}
+
+.trial {
+  background-color: var(--blue);
+  padding: 20px;
+  color: var(--grayish-blue);
+  margin-bottom: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 0 rgb(0 0 0 / 0.2);
+}
+
+.trial strong {
+  color: white;
+}
+
+.form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 0 rgb(0 0 0 / 0.2);
+}
+
+.input-control {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 5px;
+  border: 1px solid rgb(128 128 128 / 0.3);
+  border-radius: 10px;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+.input:focus {
+  border-color: var(--blue);
+}
+
+.input::placeholder {
+  color: rgb(62 60 73 / 0.6);
+  font-weight: 600;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  font-weight: 600;
+  background-color: var(--green);
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  opacity: 0.7;
+}
+
+.terms {
+  font-size: 12px;
+  text-align: center;
+  color: var(--grayish-blue);
+}
+
+.terms strong {
+  color: var(--red);
+}
+
+.error input {
+  border: 2px solid var(--red);
+}
+
+.error .input::-webkit-input-placeholder {
+  background-image: url(images/icon-error.svg);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  color: var(--red);
+}
+
+.error-text {
+  color: var(--red);
+  font-size: 10px;
+  float: right;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.success input {
+  border: 2px solid var(--green);
+}
