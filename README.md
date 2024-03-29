@@ -4,7 +4,7 @@ Translation into HTML, CSS and Javascript of various designs taken from the Fron
 
 # LINK TO SITES REALISED WITH REACT AND TAILWIND CSS
 
-- Calculator-app-FMentor: https://main--resilient-kheer-dd15c5.netlify.app/
+- Calculator-app: https://calc-fm-mentor.netlify.app/
 - Crowfunding-product-page: https://main--delicate-liger-0b92c7.netlify.app/
 - Intro-section: https://main--sunny-sundae-c83331.netlify.app/
 - Splitter: https://chic-faloodeh-ea87df.netlify.app/
